@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    font-family: monospace, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    font-family: 'Press Start 2P',  monospace;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+#ground {
+    width: 100%;
+    margin: 20px auto 30px;
+}
+
+#result,
+#context {
+    text-align: center;
+    font-size: 40px;
+}
+
+#result {
+    margin: 30px auto 10px;
+}
+
+#choose,
+#play {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.weapon,
+.score {
+    text-align: center;
+    padding: 30px;
+    font-size: 60px;
+}
+
+.weapon {
+}
+
+.score {
+}
+
+i {
+    font-size: 80px;
+    color: lightcyan;
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    background-color:lightskyblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+}
+
+button:hover,
+button:active {
+    background-color: lightseagreen;
+}
+
+button:active {
+    box-shadow: 0px 0px;
+}
