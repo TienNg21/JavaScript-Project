@@ -21,7 +21,7 @@ $("body").keypress(function(){
 })
 
 // Animate when press button
-for(colour of buttonColours){
+for(let colour of buttonColours){
     $("#" + colour).click(function(event){
         if(gameStarted){
             animatePress(this.id);
@@ -96,3 +96,14 @@ function checkAnswer(currentLevel){
         //choi thua
     }
 }
+
+const open = function() {
+    document.querySelector(".modal").classList.remove("hidden");
+};
+
+const close = function() {
+    document.querySelector(".modal").classList.add("hidden");
+};
+
+document.querySelector(".button").addEventListener('click', open);
+document.querySelector(".close-modal").addEventListener('click', close);
