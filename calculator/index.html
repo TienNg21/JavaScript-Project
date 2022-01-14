@@ -12,8 +12,8 @@
     <main>
         <h1>Calculator</h1>
         <div class="display">
+            <div class="expression">0</div>
             <div class="curr-res">0</div>
-            <div class="expression"></div>
         </div>
         <div class="calculator">
             <div class="col">
@@ -21,7 +21,7 @@
                 <div class="row"><button id="7" class="number">7</button></div>
                 <div class="row"><button id="4" class="number">4</button></div>
                 <div class="row"><button id="1" class="number">1</button></div>
-                <div class="row"><button id="dot">.</button></div>
+                <div class="row"><button id="." class="number">.</button></div>
             </div>
             <div class="col">
                 <div class="row"><button id="toggleSign">+/-</button></div>
@@ -39,7 +39,7 @@
             </div>
             <div class="col">
                 <div class="row"><button id="/" class="number">/</button></div>
-                <div class="row"><button id="x" class="number">x</button></div>
+                <div class="row"><button id="*" class="number">x</button></div>
                 <div class="row"><button id="-" class="number">-</button></div>
                 <div class="row"><button id="+" class="number">+</button></div>
                 <div class="row"><button id="equal">=</button></div>
@@ -49,4 +49,7 @@
     </main>
     <script src="script.js"></script>
 </body>
+<footer style="font-size: 1.3rem; text-align: center; margin: 1rem;">
+    <div>Copyright © <script>document.write(new Date().getFullYear())</script><a id="github-footer" target="_blank" style="text-decoration: none; color: black;" href="https://github.com/TienNg21"> TienNg21 <i class="fab fa-github"></i></a></div>
+</footer>
 </html>
