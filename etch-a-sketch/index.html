@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="mouse-o-sketch">Etch a Sketch</h1>
+    
+    <div class="grid-container"></div>
+    <div class="grid-options">
+        <div class="buttons">
+            
+            <button>
+                <span>Choose Color</span>
+                <input type="color" value="black" id="input-color" onchange="setColor()">
+            </button>
+            <button class="eraser" type="button">Eraser</button>
+            <button class="clear" type="button">Clear</button>
+        </div>
+        <br>
+        <div class="size-container">
+            <span>Pixel Size</span>
+            <input type="range" min="2" max="100" value="15" id="sizeRange" class="slider" onchange="changeSize()">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+<footer style="color: black; font-size: 1.3rem; text-align: center; margin: 1rem;">
+    <div>Copyright © <script>document.write(new Date().getFullYear())</script><a id="github-footer" target="_blank" style="text-decoration: none; color: black" href="https://github.com/TienNg21"> TienNg21 <i class="fab fa-github"></i></a></div>
+</footer>
+</html>

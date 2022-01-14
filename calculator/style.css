@@ -1,0 +1,60 @@
+body {
+    font-family: cursive;
+    background-color:wheat;
+    text-align: center;
+    margin: 10% auto 10%;
+}
+
+main {
+    width: 320px;
+    margin: auto;
+    background-color:cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.display {
+    text-align: right;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.display .curr {
+    font-size: 16px;
+    color: slategray;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+}
+
+.delete button,
+.row button {
+    font-family: cursive;
+    font-size: 1.5rem;
+    width: 70px;
+    height: 50px;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.delete button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row button {
+    margin-bottom: 2px;
+}
+
+.delete button:hover,
+.row button:hover {
+    transform: scale(1.05);
+}

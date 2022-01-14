@@ -27,6 +27,11 @@ const computerPlayRandom = function() {
 }
 
 const playerClick = function(data) {
+
+    if(comPoint === 5 || yourPoint === 5) {
+        return;
+    }
+
     let computerPlay = computerPlayRandom();
     if(data === "rock") {
         if(computerPlay === "rock") {
@@ -73,8 +78,14 @@ const playerClick = function(data) {
         } else {
             // draw
             res.textContent = "Ohh! Draww, let's play again."
-
         }
+    }
+
+    if(yourPoint === 5) {
+        res.textContent = "Congratulations!! You win."
+    }
+    if(comPoint === 5) {
+        res.textContent = "You lose.";
     }
 }
 
